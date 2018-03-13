@@ -1,11 +1,10 @@
 ```{r}
+### 1.1
 library(tidyverse)
 library(dplyr)
 library(irr)
 df <- read_csv("https://raw.githubusercontent.com/agricolamz/2018_data_analysis_for_linguists/master/data/students/ZalinaAtnagulova/hw1_agreement/hw1_1_zilo_class.csv")  
 head(df)
-
-### 1.1
 df %>%
   distinct(stimulus_source, translation_ru) %>%
   count(stimulus_source)
