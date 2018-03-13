@@ -1,13 +1,11 @@
 ```{r}
-
+### 1.1
 library(tidyverse)
 library(mosaic)
 
 n <- 199
 k <- 70
 prior <- 0.3587337
-
-### 1.1
 binomial_test <- binom.test(k, n, prior)
 binomial_test
 
