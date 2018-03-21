@@ -3,7 +3,7 @@
 library(tidyverse)
 library(dplyr)
 library(irr)
-df <- read_csv("https://raw.githubusercontent.com/agricolamz/2018_data_analysis_for_linguists/master/data/students/ZalinaAtnagulova/hw1_agreement/hw1_1_zilo_class.csv")  
+df <- read_csv("https://raw.githubusercontent.com/agricolamz/2018_data_analysis_for_linguists/master/data/students/ZalinaAtnagulova/hw2_agreement/hw2_1_zilo_class.csv")  
 head(df)
 df %>%
   distinct(stimulus_source, translation_ru) %>%
@@ -43,7 +43,7 @@ kappam.fleiss(df_short[,-c(1:3)])
 
 ```{r}
 ### 2.1
-hw1_2_verbs <- read_csv('https://raw.githubusercontent.com/agricolamz/2018_data_analysis_for_linguists/master/data/students/ZalinaAtnagulova/hw1_agreement/hw1_2_verbs.csv')
+hw1_2_verbs <- read_csv('https://raw.githubusercontent.com/agricolamz/2018_data_analysis_for_linguists/master/data/students/ZalinaAtnagulova/hw2_agreement/hw2_2_verbs.csv')
 head(hw1_2_verbs)
 hw1_2_verbs %>% 
   distinct(SubjectCode) ->
